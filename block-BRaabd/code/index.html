@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- react js scripts  -->
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- babel scripts  -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      class App extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            image: '',
+            alt: '',
+          };
+        }
+
+        basketBall = () => {
+          this.setState({
+            image: '../assets/basketball.jpg',
+            alt: 'basketBall',
+          });
+        };
+
+        cricket = () => {
+          this.setState({
+            image: '../assets/cricket.jpg',
+            alt: 'cricket',
+          });
+        };
+        laptop = () => {
+          this.setState({
+            image: '../assets/laptop.jpg',
+            alt: 'laptop',
+          });
+        };
+        phone = () => {
+          this.setState({
+            image: '../assets/phone.jpg',
+            alt: 'phone',
+          });
+        };
+
+        pubg = () => {
+          this.setState({
+            image: '../assets/pubg.jpeg',
+            alt: 'pubg',
+          });
+        };
+        tiger = () => {
+          this.setState({
+            image: '../assets/tiger.jpg',
+            alt: 'tiger',
+          });
+        };
+
+        render() {
+          return (
+            <div>
+              <h1>IMAGES</h1>
+
+              <div className="buttons">
+                <button onClick={this.basketBall}>basketball</button>
+                <button onClick={this.cricket}>Cricket</button>
+                <button onClick={this.laptop}>Laptop</button>
+                <button onClick={this.phone}>Phone</button>
+                <button onClick={this.button}>Pubg</button>
+                <button onClick={this.tiger}>tiger</button>
+              </div>
+              <div className="image-div">
+                <img src={this.state.image} alt={this.state.alt} />
+              </div>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+  </body>
+</html>
