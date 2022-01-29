@@ -1,0 +1,39 @@
+body {
+  background-color: #fef4e6;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+.main-div {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0rem 3 rem;
+}
+.question {
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid black;
+  margin-bottom: 0.5rem;
+  background-color: #fbd88c;
+}
+h2,
+p {
+  padding: 0 2rem;
+  cursor: pointer;
+}
+.span {
+  width: 100%;
+  background-color: rgb(219, 231, 231);
+  display: inline-block;
+  font-size: 1.2rem;
+}
+span {
+  margin-left: 2rem;
+  color: darkgreen;
+}
