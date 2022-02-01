@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+}
+
+.buttons {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  padding: 2rem;
+  background: white;
+  border: 1px solid rgba(128, 128, 128, 0.329);
+}
+
+button {
+  display: block;
+  text-align: center;
+  margin: auto;
+  border: none;
+  background: none;
+  padding: 0.4rem 1rem;
+  border: 1px solid;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+button:hover {
+  border: 3px solid rgb(105, 128, 0);
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.image-div {
+  margin: auto;
+  width: 50%;
+}
+img {
+  width: 100%;
+  display: block;
+  margin-top: 4rem;
+  border-radius: 0.5rem;
+}
