@@ -1,0 +1,10 @@
+input {
+  width: 50%;
+  margin: 0 auto;
+  /* display: inline-block; */
+}
+.from {
+  width: 50%;
+  margin: 0 auto;
+  /* padding-left: 20px; */
+}
